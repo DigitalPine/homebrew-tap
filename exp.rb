@@ -4,17 +4,17 @@
 class Exp < Formula
   desc "Instant project forking via macOS APFS clonefile"
   homepage "https://github.com/thebrubaker/exp"
-  version "0.3.4"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/thebrubaker/exp/releases/download/v0.3.4/exp_0.3.4_darwin_arm64.tar.gz"
-      sha256 "a9abe4a80d57bada80f888f28b1f674ea9fe00f990aca2bcc67fd23f62fc47d0"
+      url "https://github.com/thebrubaker/exp/releases/download/v0.4.0/exp_0.4.0_darwin_arm64.tar.gz"
+      sha256 "ea6ee15106d87c85526632878e6d524208ba10f71d72d0c918d9905a16e6340a"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/thebrubaker/exp/releases/download/v0.3.4/exp_0.3.4_darwin_x64.tar.gz"
-      sha256 "90d5b14403b38953ee6c04e7dce81bcb667a23ffac5d0deb26ea93a351200d48"
+      url "https://github.com/thebrubaker/exp/releases/download/v0.4.0/exp_0.4.0_darwin_x64.tar.gz"
+      sha256 "cb3101336da8f296442721c609889306328bffba86a7fb6b10bfc251a7c18cfb"
     end
   end
 
