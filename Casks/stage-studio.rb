@@ -12,7 +12,10 @@ cask "stage-studio" do
   # deployment target. Declaring it here makes Homebrew refuse the install on
   # an older Mac rather than hand over an app whose engine dies with a dyld
   # error the first time you press record.
-  depends_on macos: ">= :sequoia"
+  # Bare symbol means "at least" — Homebrew's MacOSRequirement.parse routes a
+  # plain version symbol through the >= comparator, and deprecated the older
+  # ">= :sequoia" string form in favour of exactly this.
+  depends_on macos: :sequoia
 
   app "Stage Studio.app"
 
